@@ -1,0 +1,53 @@
+.services {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: #111319;
+  background-image: url(../../images/services/prices_mob-480.png);
+}
+.section--padding-positioning {
+  max-width: 480px;
+  height: 100%;
+  padding: 84px 31px;
+  text-align: center;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  padding: 15px;
+  background: linear-gradient(180deg, #171a24, rgba(23, 26, 36, 0.2));
+  text-align: left;
+}
+
+.services__item--first {
+  @media screen and (max-width: 1279px) {
+    margin-bottom: 20px;
+  }
+}
+
+.services__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  max-width: inherit;
+
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.services__line {
+  height: 1px;
+  flex-grow: 1;
+  background-color: rgba(157, 164, 189, 0.12);
+  margin: 0 6px;
+}

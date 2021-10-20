@@ -1,0 +1,42 @@
+.form {
+  padding-left: 31px;
+  padding-right: 31px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+  margin: 0 auto;
+  max-width: 480px;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 8px;
+
+  font-family: Open Sans, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  color: #fff;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  transition: border-bottom-color, var(--trans-duration), var(--timing-function);
+}
+
+.form__textarea {
+  resize: none;
+
+  letter-spacing: 0.1em;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.form__field {
+  display: block;
+  margin-bottom: 44px;
+}

@@ -1,0 +1,33 @@
+.btn {
+  padding: 12px 37px;
+  border-radius: 25px;
+  border: 1px solid var(--orange-color);
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: var(--main-color);
+  background: var(--white-color) transparent;
+
+  transition: background-color var(--timing-function) var(--trans-duration);
+
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+    background-color: var(--orange-color);
+    box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.04),
+      -2px 0px 4px rgba(0, 0, 0, 0.08), -1px 0px 3px rgba(0, 0, 0, 0.16);
+  }
+  &--dark-theme {
+    color: var(--white-color);
+  }
+}
+
+.btn--centered {
+  display: block;
+  margin: 0 auto;
+}

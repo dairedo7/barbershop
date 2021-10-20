@@ -1,0 +1,10 @@
+.about {
+  font-family: Open Sans, sans-serif;
+  color: var(--main-color);
+}
+
+.about-us__list {
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+}

@@ -1,0 +1,34 @@
+//utils
+@import "./utils/variables";
+@import "./utils/base";
+@import "./utils/visually-hidden";
+@import "./utils/before";
+// @import "./utils/header-links";
+
+//base // base styles, normalization, local styles
+@import "./base/common";
+@import "./base/containers";
+
+//components // component files: blocks
+@import "./components/button";
+@import "./components/logo";
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/form";
+@import "./components/mobile-menu";
+@import "./components/section";
+// @import "./components/socials-links";
+// @import "./components/section-title";
+
+// layouts
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/about";
+@import "./layout/features";
+@import "./layout/services";
+@import "./layout/team";
+@import "./layout/work";
+// @import "./layout/regular-customers";
+@import "./layout/footer";
+// @import "./layout/filter";
+// @import "./layout/gallery";

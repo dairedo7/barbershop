@@ -1,0 +1,11 @@
+@mixin before($BG: var(--main-color)) {
+  content: "";
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 20px;
+
+  width: 60px;
+  height: 1px;
+
+  background: $BG;
+}
