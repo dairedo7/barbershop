@@ -1,4 +1,6 @@
 .container {
+  position: relative;
+  max-width: 480px;
   padding-left: 31px;
   padding-right: 31px;
 
@@ -8,7 +10,7 @@
   }
 
   @media screen and (min-width: $tablet) {
-    width: 768px;
+    max-width: 768px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -19,6 +21,10 @@
 .section {
   @media screen and (min-width: $mobile) {
     max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding: 0 39px;
   }
   padding: 84px 31px;
   margin-left: auto;

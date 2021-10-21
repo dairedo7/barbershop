@@ -31,3 +31,71 @@
   display: block;
   margin: 0 auto;
 }
+
+.header__burger-icon {
+  right: 20px;
+  transition: fill var(--timing-function) var(--trans-duration);
+  .header__burger-btn:hover &,
+  .header__burger-btn:focus & {
+    fill: var(--orange-color);
+  }
+}
+
+.btn-hidden {
+  @media screen and (min-width: $tablet) {
+    display: none;
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+}
+
+.contacts__btn {
+  color: var(--white-color);
+  @media screen and(min-width: $tablet) {
+    padding: 12px 20px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    margin-bottom: 20px;
+  }
+}
+
+.hero-section__btn {
+  padding: 8px 0;
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  color: var(--white-color);
+  background-color: transparent;
+  outline: none;
+  border-image: none;
+  border: none;
+  border-bottom: 1px solid;
+  &:disabled {
+    color: rgba(157, 164, 189, 0.6);
+  }
+  &:hover {
+    color: var(--orange-color);
+  }
+  &:active {
+    -webkit-animation: pulsing 0.4s;
+    animation: pulsing 0.4s;
+  }
+}
+
+.hero-section__btn__back {
+  color: var(--white-color);
+  padding-right: 22px;
+  margin-right: 26px;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-section__btn__forward {
+  padding-left: 13px;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -3,6 +3,7 @@
 @import "./utils/base";
 @import "./utils/visually-hidden";
 @import "./utils/before";
+@import "./utils/slider-lines";
 // @import "./utils/header-links";
 
 //base // base styles, normalization, local styles
@@ -17,8 +18,8 @@
 @import "./components/form";
 @import "./components/mobile-menu";
 @import "./components/section";
+@import "./components/flexer-list";
 // @import "./components/socials-links";
-// @import "./components/section-title";
 
 // layouts
 @import "./layout/header";
@@ -28,7 +29,4 @@
 @import "./layout/services";
 @import "./layout/team";
 @import "./layout/work";
-// @import "./layout/regular-customers";
 @import "./layout/footer";
-// @import "./layout/filter";
-// @import "./layout/gallery";

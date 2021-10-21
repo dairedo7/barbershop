@@ -1,0 +1,27 @@
+.flexer-list {
+  display: flex;
+  transform: rotate(-90deg);
+  margin-top: 553px;
+  &__item {
+    display: flex;
+    align-items: center;
+    transition: var(--trans-duration) var(--timing-function);
+  }
+  &__link {
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+
+    letter-spacing: 0.2em;
+
+    color: var(--main-color);
+  }
+  &__item:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.flexer-list__item:first-child::before {
+  @include before($MR: 40px);
+}

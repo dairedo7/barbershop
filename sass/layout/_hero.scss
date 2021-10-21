@@ -4,6 +4,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(
+      90deg,
+      #fff,
+      #d5d5d5,
+      #aaaaab,
+      #808082,
+      #555558,
+      #2b2b2e,
+      #27272b,
+      #232328,
+      #1f1f25,
+      #1b1a22,
+      #17161f,
+      #13121c
+    );
   }
 }
 
@@ -25,7 +40,7 @@
       #13121c
     );
   }
-  @media screen and (min-width: $tablet - 1px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: flex-end;
     max-width: 768px;
@@ -36,7 +51,7 @@
   display: none;
   @media screen and (min-width: $tablet) {
     display: inline-block;
-    background: #fff;
+    background: var(--white-color);
     width: 159px;
     height: 680px;
   }
@@ -49,13 +64,18 @@
   min-width: 280px;
   max-width: 1125px;
   background-image: url("../images/hero/hero-mobile3.jpg");
-  background: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   @media screen and (max-width: $tablet - 1px) {
     max-width: 480px;
     margin-left: auto;
     margin-right: auto;
+  }
+  @media screen and (min-width: $tablet) {
+    height: 680px;
+    min-width: 609px;
+    padding: 40px;
   }
 }
 
@@ -89,15 +109,20 @@
   position: absolute;
   font-style: normal;
   z-index: 2;
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: $tablet - 1px) {
     max-width: 306px;
     padding-top: 208px;
     margin-left: 31px;
   }
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: $mobile - 1px) {
     max-width: 306px;
     padding-top: 208px;
     margin-left: 8px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+    max-width: 355px;
+    padding-left: 80px;
+    padding-top: 232px;
   }
 
   &__subtitle {

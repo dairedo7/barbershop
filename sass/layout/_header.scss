@@ -1,5 +1,4 @@
 .header {
-  width: 480px;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -7,16 +6,14 @@
   padding-right: 31px;
 
   &__container {
-    position: relative;
-    max-width: 480px;
-    z-index: 2;
+    z-index: 3;
   }
 }
 @media screen and (max-width: 767px) {
   .header__burger-btn {
     position: absolute;
     top: 48px;
-    right: 0;
+    right: 0px;
     width: 40px;
     height: 40px;
     z-index: 5;
@@ -45,14 +42,30 @@
     position: absolute;
     display: flex;
     justify-content: space-between;
+    top: 52px;
+    left: 153px;
   }
 }
 
+// .nav {
+//   margin-right: 47px;
+// }
+
 .navbar {
   display: flex;
+  @media screen and (min-width: $tablet) {
+    font-size: 12px;
+    line-height: 1.33;
+  }
+  &__item:not(:last-child) {
+    margin-right: 24px;
+  }
 }
 
 .contacts {
+  position: absolute;
   display: flex;
   flex-direction: column-reverse;
+  top: -13px;
+  right: -212px;
 }

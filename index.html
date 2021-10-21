@@ -16,16 +16,16 @@
 <body>
     <header class="header">
         <div class="container header__container">
-            <a class="logo" href="./index.html" style="display:none">
+            <a class="logo" href="./index.html">
                 <svg class="logo__icon" width="69" height="56">
                     <use href="./images/sprite.svg#icon-Logo"></use>
                 </svg>
-            </a>
-            <button class="header__burger-btn is-open" type="button" data-menu-button data-modal-open aria-expanded="false" aria-controls="menu-container">
+            </a><div class="btn-hidden">
+            <button class="header__burger-btn is-open" width="40px" height="40px" type="button" data-menu-button data-modal-open aria-expanded="false" aria-controls="menu-container">
                 <svg class="header__burger-icon">
                     <use href="./images/sprite.svg#burger"></use>
                 </svg>
-            </button>
+            </button></div>
             <div class="holder">
                 <nav class="nav">
                     <ul class="navbar">
@@ -50,9 +50,9 @@
                         </a>
                     </li>
                     <li class="contacts__item">
-                        <button class="contacts__info btn" type="button" href="./index.html" data-menu-button>
+                        <a class="contacts__btn btn" type="button" href="#contacts" data-menu-button>
                             Онлайн-запись
-                        </button>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -89,8 +89,8 @@
                         +38 096 111 11 11</a>
                 </li>
                 <li class="mobile-menu__contacts-item">
-                    <button type="button" class="btn" href="mailto:info@devstudio.com">
-                        онлайн-запись</button>
+                    <a type="button" class="btn" href="#contacts">
+                        онлайн-запись</a>
                 </li>
             </ul>
 
@@ -113,12 +113,12 @@
     <div class="hero-background">
         <div class="hero-flexer ">
             <div class="hero-flexer__slider">
-                <ul class="hero-flexer__list">
-                    <li class="hero-flexer__list-item hero-flexer__list-item-first">
-                        Instagram
+                <ul class="flexer-list">
+                    <li class="flexer-list__item">
+                        <a href="https://www.instagram.com/" class="flexer-list__link">Instagram</a>
                     </li>
-                    <li class="hero-flexer__list-item">
-                        Youtube
+                    <li class="flexer-list__item">
+                        <a href="https://www.youtube.com/" class="flexer-list__link">Youtube</a>
                     </li>
                 </ul>
             </div>

@@ -41,6 +41,9 @@
 
   font-size: 18px;
   line-height: 1.66;
+  @media screen and (min-width: $tablet) {
+    color: var(--white-color);
+  }
 }
 
 .contacts__info:not(:last-child) {

@@ -1,8 +1,8 @@
-@mixin before($BG: var(--main-color)) {
+@mixin before($BG: var(--main-color), $MR: 20px) {
   content: "";
   vertical-align: middle;
   display: inline-block;
-  margin-right: 20px;
+  margin-right: $MR;
 
   width: 60px;
   height: 1px;
