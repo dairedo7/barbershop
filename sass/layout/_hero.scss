@@ -45,6 +45,9 @@
     justify-content: flex-end;
     max-width: 768px;
   }
+  @media screen and (min-width: $desktop-hd) {
+    max-width: 1280px;
+  }
 }
 
 .hero-flexer__slider {
@@ -63,7 +66,7 @@
   height: 580px;
   min-width: 280px;
   max-width: 1125px;
-  background-image: url("../images/hero/hero-mobile3.jpg");
+  // background-image: url("../images/hero/hero-mobile3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -77,7 +80,33 @@
     min-width: 609px;
     padding: 40px;
   }
+  @media screen and (min-width: $desktop-hd) {
+    min-width: 1125px;
+    height: 680px;
+    padding: 40px 55px;
+  }
 }
+
+// .hero-section {
+//   @media screen and (min-device-pixel-ratio: 2),
+//     not all,
+//     screen and (min-resolution: 192dpi),
+//     screen and (min-resolution: 2dppx) {
+//     background-image: url("../images/hero/hero-mobile3@2x.jpg");
+//   }
+//   @media (min-width: $tablet) {
+//     background-image: url("../images/hero/hero-tablet3.jpg");
+//   }
+//   @media screen and (min-device-pixel-ratio: 2) and (min-width: $tablet),
+//     not all,
+//     screen and (min-resolution: 192dpi) and (min-width: $tablet),
+//     screen and (min-resolution: 2dppx) and (min-width: $tablet) {
+//     background-image: url("../images/hero/hero-tablet3@2x.jpg");
+//   }
+//   @media (min-width: $desktop) {
+//     background-image: url("../images/hero/hero-desktop3.jpg");
+//   }
+// }
 
 .hero-section__bg-shadow {
   display: block;
@@ -105,6 +134,16 @@
   pointer-events: none;
 }
 
+.hero-switch-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  @media screen and (max-width: $tablet - 1px) {
+    height: 580px;
+  }
+}
+
 .hero-container {
   position: absolute;
   font-style: normal;
@@ -122,6 +161,11 @@
   @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
     max-width: 355px;
     padding-left: 80px;
+    padding-top: 232px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 486px;
+    padding-left: 45px;
     padding-top: 232px;
   }
 
@@ -146,6 +190,10 @@
       font-size: 42px;
       line-height: 1.18;
     }
+    @media screen and (min-width: $desktop) {
+      font-size: 72px;
+      line-height: 1.18;
+    }
     margin-bottom: 20px;
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -161,6 +209,10 @@
     line-height: 1.62;
     letter-spacing: 0.02em;
     color: #9da4bd;
+    @media screen and (min-width: $desktop) {
+      font-size: 18px;
+      line-height: 1.67;
+    }
   }
 }
 

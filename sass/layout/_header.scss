@@ -5,6 +5,15 @@
   padding-left: 31px;
   padding-right: 31px;
 
+  @media screen and (min-width: $mobile) {
+    width: 480px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+  }
+  @media screen and (min-width: $desktop-hd) {
+    width: 1280px;
+  }
   &__container {
     z-index: 3;
   }
@@ -65,7 +74,12 @@
 .contacts {
   position: absolute;
   display: flex;
+  align-items: center;
   flex-direction: column-reverse;
   top: -13px;
-  right: -212px;
+  right: -271px;
+  @media screen and (min-width: $desktop-hd) {
+    flex-direction: row;
+    right: -775px;
+  }
 }

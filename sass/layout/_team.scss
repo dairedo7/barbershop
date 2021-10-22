@@ -1,3 +1,24 @@
 .team {
   background-color: #f7f7f7;
 }
+
+.section__masters {
+  @media screen and (min-width: $tablet) {
+    max-width: 450px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 1200px;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .members {
+    display: flex;
+    justify-content: center;
+    &__item {
+      flex-basis: calc((100% / 3) - 30px);
+    }
+    &__item:nth-child(-n + 2) {
+      margin-right: 30px;
+    }
+  }
+}

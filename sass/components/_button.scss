@@ -1,12 +1,12 @@
 .btn {
-  padding: 12px 37px;
+  padding: 12px 20px;
   border-radius: 25px;
   border: 1px solid var(--orange-color);
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
 
@@ -27,9 +27,24 @@
   }
 }
 
+.btn {
+  @media screen and (min-width: $tablet) {
+  }
+}
+
+.about-btn {
+  width: 163px;
+  height: 40px;
+  padding: 12px 20px;
+}
+
 .btn--centered {
   display: block;
   margin: 0 auto;
+  @media screen and (min-width: $tablet) {
+    margin: 0;
+    padding: 12px 38px;
+  }
 }
 
 .header__burger-icon {
@@ -60,10 +75,14 @@
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
     margin-bottom: 20px;
   }
+  @media screen and (min-width: $desktop) {
+    margin-left: 40px;
+  }
 }
 
 .hero-section__btn {
   padding: 8px 0;
+
   font-family: Open Sans, sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -92,10 +111,10 @@
   color: var(--white-color);
   padding-right: 22px;
   margin-right: 26px;
-  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--timing-function) var(--trans-duration);
 }
 
 .hero-section__btn__forward {
   padding-left: 13px;
-  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--timing-function) var(--trans-duration);
 }

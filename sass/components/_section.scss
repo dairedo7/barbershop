@@ -1,5 +1,9 @@
 .section__sub-title {
   margin-bottom: 20px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
   font-family: Open Sans;
   font-weight: 600;
   font-size: 11px;
@@ -16,6 +20,9 @@
 }
 
 .sub-title {
+  @media screen and (min-width: 768px) {
+    line-height: 1.36;
+  }
   &--padding {
     padding-left: 80px;
   }
@@ -32,14 +39,16 @@
 
 .section__title {
   margin-bottom: 44px;
-  max-width: 418px;
+  // max-width: 418px;
   letter-spacing: 0.05em;
 
   font-size: 28px;
   line-height: 1.178;
   text-align: left;
   &--small {
-    max-width: 330px;
+    @media screen and (max-width: $tablet - 1px) {
+      max-width: 330px;
+    }
   }
   &--dark-theme {
     font-size: 42px;
@@ -52,19 +61,33 @@
     color: var(--main-color);
   }
   &--centered {
-    text-align: center;
+    @media screen and (max-width: $tablet - 1px) {
+      text-align: center;
+    }
+  }
+}
+
+.section__title {
+  @media screen and (min-width: $desktop) {
+    font-size: 42px;
+    line-height: 1.17;
   }
 }
 
 .title--small-margin {
   margin-bottom: 20px;
 }
+
 .section__text-title {
   margin-bottom: 20px;
 
   font-family: Open Sans;
   font-size: 16px;
   line-height: 1.67;
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
 
   color: var(--text-title-color);
 }
@@ -75,7 +98,7 @@
   font-family: Open Sans;
 
   font-size: 14px;
-  line-height: 1.857;
+  line-height: 1.86;
 
   letter-spacing: 0.02em;
 

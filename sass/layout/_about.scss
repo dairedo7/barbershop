@@ -4,7 +4,31 @@
 }
 
 .about-us__list {
+  margin-right: 30px;
   @media screen and (max-width: $tablet - 1px) {
     display: none;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
+
+
+.about-us__item:nth-child(-n + 1) {
+ @media screen and (max-width: $desktop - 1px) {
+  margin-bottom: 30px;
+ }
+ @media screen and (min-width: $desktop) {
+   margin-right: 30px;
+ }
+}
+
+
+.about__content {
+  @media screen and (min-width: $tablet) {
+    width: 330px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 500px;
   }
 }

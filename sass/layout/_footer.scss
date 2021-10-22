@@ -2,52 +2,108 @@
   background-color: #191c26;
 }
 
+.footer__top {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+  }
+}
+
 .contacts-wrapper {
+  max-width: 480px;
   padding: 84px 31px;
+
   background: url("../images/footer/footer-mob-480.png");
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 480px;
-
   @media screen and (max-width: $desktop - 1px) {
     margin-left: auto;
     margin-right: auto;
   }
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+    max-width: 768px;
+    padding: 100px 39px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: relative;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    padding-left: 100px;
+  }
+
   &__title {
-    text-align: center;
+    @media screen and (max-width: $tablet - 1px) {
+      text-align: center;
+    }
     margin-bottom: 40px;
   }
 }
 
+.contacts-wrapper {
+  @media screen and (min-device-pixel-ratio: 2),
+    not all,
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url("../images/footer/footer-mob-480@2x.png");
+  }
+  @media (min-width: $tablet) {
+    background-image: url("../images/footer/footer-tab-768.png");
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: $tablet),
+    not all,
+    screen and (min-resolution: 192dpi) and (min-width: $tablet),
+    screen and (min-resolution: 2dppx) and (min-width: $tablet) {
+    background-image: url("../images/footer/footer-tab-768@2x.png");
+  }
+  @media (min-width: $desktop) {
+    background-image: url("../images/footer/footer-desk-1280.png");
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: $desktop),
+    not all,
+    screen and (min-resolution: 192dpi) and (min-width: $desktop),
+    screen and (min-resolution: 2dppx) and (min-width: $desktop) {
+    background-image: url("../images/footer/footer-desk-1280@2x.png");
+  }
+}
+
+.contacts-wrapper__inner {
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .address {
   display: flex;
   flex-direction: column;
   @media screen and (max-width: $tablet - 1px) {
     margin-bottom: 44px;
   }
-}
-
-.address__link {
-  margin-bottom: 20px;
-  font-family: Open Sans;
-
-  font-size: 18px;
-  line-height: 1.66;
-}
-
-.contacts__info {
-  font-family: Open Sans;
-
-  font-size: 18px;
-  line-height: 1.66;
   @media screen and (min-width: $tablet) {
-    color: var(--white-color);
+    width: 330px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 70px;
   }
 }
 
-.contacts__info:not(:last-child) {
-  margin-bottom: 20px;
+.address__comma {
+  display: none;
+}
+
+.phone,
+.mail {
+  font-size: 18px;
+  color: var(--link-grey);
+}
+
+.mail {
+  text-decoration: underline;
 }
 
 .holder__text {
@@ -101,23 +157,6 @@
 
   &__item:not(:last-child) {
     margin-right: 40px;
-  }
-}
-
-.footer__link {
-  font-family: Open Sans;
-
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.2em;
-
-  color: var(--main-color);
-  transition: color var(--trans-duration) var(--timing-function);
-
-  &:hover,
-  &:focus {
-    color: var(--orange-color);
   }
 }
 

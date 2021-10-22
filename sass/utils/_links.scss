@@ -1,0 +1,59 @@
+.navbar__link {
+  color: var(--white-color);
+  transition: color var(--trans-duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--orange-color);
+  }
+}
+
+.address__link {
+  margin-bottom: 20px;
+  font-family: Open Sans;
+
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+.contacts__info {
+  font-family: Open Sans;
+
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  transition: color var(--trans-duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--orange-color);
+  }
+  @media screen and (min-width: $tablet) {
+    color: var(--white-color);
+  }
+  @media screen and (min-width: $tablet) {
+    font-size: 12px;
+    line-height: 1.33;
+  }
+}
+
+.contacts__info:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.footer__link {
+  font-family: Open Sans;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--main-color);
+  transition: color var(--trans-duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--orange-color);
+  }
+}

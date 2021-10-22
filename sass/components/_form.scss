@@ -3,8 +3,40 @@
   padding-right: 31px;
   padding-top: 84px;
   padding-bottom: 84px;
-  margin: 0 auto;
+
   max-width: 480px;
+  @media screen and (max-width: $desktop - 1px) {
+    margin: 0 auto;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+    max-width: 768px;
+    padding: 100px 39px;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.form {
+  @media screen and (min-width: 1280px) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    padding-right: 40px;
+  }
+}
+.form__field {
+  &:first-child {
+    margin-right: 30px;
+  }
+  .form__container & {
+    width: 270px;
+  }
+
+  @media screen and (max-width: $desktop - 1px) {
+    .form__container & {
+      width: 330px;
+    }
+  }
 }
 
 .form__input {

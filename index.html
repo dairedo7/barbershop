@@ -20,17 +20,20 @@
                 <svg class="logo__icon" width="69" height="56">
                     <use href="./images/sprite.svg#icon-Logo"></use>
                 </svg>
-            </a><div class="btn-hidden">
-            <button class="header__burger-btn is-open" width="40px" height="40px" type="button" data-menu-button data-modal-open aria-expanded="false" aria-controls="menu-container">
-                <svg class="header__burger-icon">
-                    <use href="./images/sprite.svg#burger"></use>
-                </svg>
-            </button></div>
+            </a>
+            <div class="btn-hidden">
+                <button class="header__burger-btn is-open" width="40px" height="40px" type="button" data-menu-button
+                    data-modal-open aria-expanded="false" aria-controls="menu-container">
+                    <svg class="header__burger-icon">
+                        <use href="./images/sprite.svg#burger"></use>
+                    </svg>
+                </button>
+            </div>
             <div class="holder">
                 <nav class="nav">
                     <ul class="navbar">
                         <li class="navbar__item">
-                            <a class="navbar__link navbar__link--active" href="#about">О нас</a>
+                            <a class="navbar__link" href="#about">О нас</a>
                         </li>
                         <li class="navbar__item">
                             <a class="navbar__link" href="#services">Услуги и цены</a>
@@ -60,55 +63,55 @@
     </header>
 
     <!-- mobile-menu -->
-<div class="backdrop is-hidden" data-modal>
-    <div class="mobile-menu" data-menu>
-        <div class="mobile-menu__container">
-            <button class="mobile-menu__close-btn" type="button" data-menu-close data-modal-close>
-                <svg class="mobile-menu__close-icon">
-                    <use href="./images/sprite.svg#icon-close"></use>
-                </svg>
-            </button>
-            <ul class="mobile-menu__link-list">
-                <li class="mobile-menu__list-item">
-                    <a class="mobile-menu__link" href="#about">О нас</a>
-                </li>
-                <li class="mobile-menu__list-item">
-                    <a class="mobile-menu__link" href="#services">Услуги и цены</a>
-                </li>
-                <li class="mobile-menu__list-item">
-                    <a class="mobile-menu__link" href="#masters">Мастера</a>
-                </li>
-                <li class="mobile-menu__list-item">
-                    <a class="mobile-menu__link" href="#contacts">Контакты</a>
-                </li>
-            </ul>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="mobile-menu" data-menu>
+            <div class="mobile-menu__container">
+                <button class="mobile-menu__close-btn" type="button" data-menu-close data-modal-close>
+                    <svg class="mobile-menu__close-icon">
+                        <use href="./images/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu__link-list">
+                    <li class="mobile-menu__list-item">
+                        <a class="mobile-menu__link" href="#about">О нас</a>
+                    </li>
+                    <li class="mobile-menu__list-item">
+                        <a class="mobile-menu__link" href="#services">Услуги и цены</a>
+                    </li>
+                    <li class="mobile-menu__list-item">
+                        <a class="mobile-menu__link" href="#masters">Мастера</a>
+                    </li>
+                    <li class="mobile-menu__list-item">
+                        <a class="mobile-menu__link" href="#contacts">Контакты</a>
+                    </li>
+                </ul>
 
-            <ul class="mobile-menu__contacts">
-                <li class="mobile-menu__contacts-item">
-                    <a class="mobile-menu__contacts-phone" href="tel:+380961111111">
-                        +38 096 111 11 11</a>
-                </li>
-                <li class="mobile-menu__contacts-item">
-                    <a type="button" class="btn" href="#contacts">
-                        онлайн-запись</a>
-                </li>
-            </ul>
+                <ul class="mobile-menu__contacts">
+                    <li class="mobile-menu__contacts-item">
+                        <a class="mobile-menu__contacts-phone" href="tel:+380961111111">
+                            +38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu__contacts-item">
+                        <a type="button" class="btn" href="#contacts">
+                            онлайн-запись</a>
+                    </li>
+                </ul>
 
-            <ul class="mobile-menu__socials">
-                <li class="mobile-menu__socials-item">
-                    <a href="#" class="mobile-menu__socials-link">
-                        Instagram
-                    </a>
-                </li>
-                <li class="mobile-menu__socials-item">
-                    <a href="#" class="mobile-menu__socials-link">
-                        Youtube
-                    </a>
-                </li>
-            </ul>
+                <ul class="mobile-menu__socials">
+                    <li class="mobile-menu__socials-item">
+                        <a href="#" class="mobile-menu__socials-link">
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="mobile-menu__socials-item">
+                        <a href="#" class="mobile-menu__socials-link">
+                            Youtube
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
 
     <div class="hero-background">
         <div class="hero-flexer ">
@@ -125,6 +128,71 @@
 
             <section class="hero-section">
                 <div class="hero-section__bg-shadow"></div>
+                <div class="hero-section__bg-img">
+                    <ul class="hero-img-list" data-id="list">
+                        <li class="slide-1 active-slide" data-item="">
+                            <picture class="bg-img__third">
+                                <source srcset="
+                                  images/hero/hero-desktop3.jpg  1125w,
+                                  images/hero/hero-desktop3@2x.jpg 2250w
+                                " media="(min-width:1280px)">
+                                <source srcset="
+                                  images/hero/hero-mobile3.jpg     480w,
+                                  images/hero/hero-mobile3@2x.jpg  960w
+                                " media="(max-width:767px)">
+                                <source srcset="
+                                  images/hero/hero-tablet3.jpg     609w,
+                                  images/hero/hero-tablet3@2x.jpg 1218w
+                                " media="(min-width:768px)">
+                                <img class="hero-switch-img" src="images/hero/hero-mobile3.jpg"
+                                    alt="Фоновое изображение секции героя"
+                                    sizes="(min-width:1280px) 1125px, (min-width:768px) 609px, (max-width:767px) 480px, 480px">
+                            </picture>
+                        </li>
+                        <li class="slide-2 hidden" data-item="">
+                            <picture class="bg-img__second">
+                                <source srcset="
+                                  images/hero/hero-desktop2.jpg    1125w,
+                                  images/hero/hero-desktop2@2x.jpg 2250w
+                                " media="(min-width:1280px)">
+                                <source srcset="
+                                  images/hero/hero-mobile2.jpg     480w,
+                                  images/hero/hero-mobile2@2x.jpg  960w
+                                " media="(max-width:767px)">
+                                <source srcset="
+                                  images/hero/hero-tablet2.jpg     609w,
+                                  images/hero/hero-tablet2@2x.jpg 1218w
+                                " media="(min-width:768px)">
+                
+                                <img src="images/hero/hero-mobile2.jpg" class="hero-switch-img"
+                                    alt="Фоновое изображение секции героя"
+                                    sizes="(min-width:1280px) 1125px, (min-width:768px) 609px, (max-width:767px) 480px, 480px">
+                            </picture>
+                        </li>
+                        <li class="slide-3 hidden" data-item="">
+                            <picture class="bg-img__first">
+                                <source srcset="
+                                  images/hero/hero-desktop1.jpg    1125w,
+                                  images/hero/hero-desktop1@2x.jpg 2250w
+                                " media="(min-width:1280px)">
+                
+                                <source srcset="
+                                  images/hero/hero-mobile1.jpg     480w,
+                                  images/hero/hero-mobile1@2x.jpg  960w
+                                " media="(max-width:767px)">
+                
+                                <source srcset="
+                                  images/hero/hero-tablet1.jpg     609w,
+                                  images/hero/hero-tablet1@2x.jpg 1218w
+                                " media="(min-width:768px)">
+                
+                                <img src="images/hero/hero-mobile1.jpg" class="hero-switch-img"
+                                    alt="Фоновое изображение секции героя"
+                                    sizes="(min-width:1280px) 1125px, (min-width:768px) 609px, (max-width:767px) 480px, 480px">
+                            </picture>
+                        </li>
+                    </ul>
+                </div>
                 <div class="hero-container">
                     <p class="hero-container__subtitle">A hair salon for men in Kyiv</p>
                     <h1 class="hero-container__title">BarberShop</h1>
@@ -165,41 +233,43 @@
         </div>
     </div>
     <section class="about" id="about">
-        <div class="container section">
+        <div class="container section section__about">
             <ul class="about-us__list">
                 <li class="about-us__item">
                     <picture>
                         <source srcset="./images/about/About1tablet.jpg 1x, ./images/about/About1tablet@2x.jpg 2x"
-                            media="(max-width: 1199px)">
+                            media="(max-width: 1279px)">
                         <source srcset="./images/about/About1desktop.jpg 1x, ./images/about/About1desktop@2x.jpg 2x"
-                            media="(min-width: 1200px)">
+                            media="(min-width: 1280px)">
                         <img href="./images/about/About1tablet.jpg" alt="beard dressing" />
                     </picture>
                 </li>
                 <li class="about-us__item">
                     <picture>
                         <source srcset="./images/about/About2tablet.jpg 1x, ./images/about/About2tablet@2x.jpg 2x"
-                            media="(max-width: 1199px)">
+                            media="(max-width: 1279px)">
                         <source srcset="./images/about/About2desktop.jpg 1x, ./images/about/About2desktop@2x.jpg 2x"
-                            media="(min-width: 1200px)">
+                            media="(min-width: 1280px)">
                         <img href="./images/about/About2tablet.jpg" alt="beard dressing" />
                     </picture>
                 </li>
             </ul>
-            <p class="section__sub-title">О нас</p>
-            <h2 class="section__title section__title--small title--small-margin">Лучший Барбершоп
-                твоего города</h2>
-            <p class="section__text-title">
-                Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
-            </p>
-            <p class="about__text-content">
-                Мы команда, которая никогда не останавливается на достигнутом
-                и жаждет перемен. И когда ты попадешь в руки нашего мастера,
-                то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне".
-                Поэтому, мы всегда
-                готовы усовершенствовать каждого, кто к нам приходит!
-            </p>
-            <button class="btn" type="button" href="./index.html">Онлайн-запись</button>
+            <div class="about__content">
+                <p class="section__sub-title">О нас</p>
+                <h2 class="section__title section__title--small title--small-margin">Лучший Барбершоп
+                    твоего города</h2>
+                <p class="section__text-title">
+                    Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
+                </p>
+                <p class="about__text-content">
+                    Мы команда, которая никогда не останавливается на достигнутом
+                    и жаждет перемен. И когда ты попадешь в руки нашего мастера,
+                    то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне".
+                    Поэтому, мы всегда
+                    готовы усовершенствовать каждого, кто к нам приходит!
+                </p>
+                <button class="about-btn btn" type="button" href="./index.html">Онлайн-запись</button>
+            </div>
         </div>
     </section>
     <section class="services" id="services">
@@ -262,13 +332,13 @@
         </div>
     </section>
     <section class="features">
-        <div class="container section">
+        <div class="container section section__features">
             <div class="section__description">
                 <p class="section__sub-title">старая традиционная школа</p>
-                <h2 class="section__title section__title--light-theme title--small-margin">Почему приходят именно к нам?
+                <h2 class="section__title section__title--light-theme title--small-margin">Почему приходят <br /> именно к нам?
                 </h2>
                 <p class="section__text-title">
-                    О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.
+                    О нас говорят только хорошее. Но лучше <br /> 1 раз увидеть и прочувствовать, чем 10 раз прочитать.
                 </p>
             </div>
             <ul class="features-list">
@@ -300,7 +370,7 @@
         </div>
     </section>
     <section class="team" id="masters">
-        <div class="container section">
+        <div class="container section section__masters">
             <div class="section__description">
                 <p class="section__sub-title">для настоящих ценителей атмосферы</p>
                 <h2 class="section__title section__title--light-theme">Наши мастера</h2>
@@ -467,7 +537,7 @@
         </div>
     </section>
     <section class="our-work">
-        <div class="container section">
+        <div class="container section section__work">
             <div class="section__description">
                 <p class="section__sub-title sub-title--no-margin">На латинском языке “барба” означает
                     <span class="sub-title--padding">“борода”</span>
@@ -567,6 +637,7 @@
             <div class="footer__top">
                 <form class="form" autocomplete="off">
                     <h2 class="section__title section__title--dark-theme section__title--centered">Онлайн-запись</h2>
+                    <div class="form__container">
                     <label class="form__field">
                         <input class="form__input" type="text" name="username" id="name" required minlength="3"
                             placeholder="ИМЯ*" />
@@ -575,6 +646,7 @@
                         <input class="form__input" type="tel" name="phone" id="phone" title="Ведите номер телефона"
                             required minlength="9" maxlength="14" placeholder="ТЕЛЕФОН*" />
                     </label>
+                    </div>
                     <label class="form__field" for="comment">
                         <textarea class="form__input form__textarea" name="comment" rows="3" cols="46" id="comment"
                             title="Тут можна написать свой комментарий" maxlength="200"
@@ -590,12 +662,12 @@
                         <address class="address">
                             <a class="address__link"
                                 href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
-                                target="_blank">ул. Васильковая, 7А
+                                target="_blank">ул. Васильковая, 7А <span class="address__comma">,&nbsp;</span>
                                 Киев, 08132</a>
-                            <a class="contacts__info" href="tel:+380441111111">+38 044
+                            <a class="contacts__info phone" href="tel:+380441111111">+38 044
                                 111
                                 11 11</a>
-                            <a class="contacts__info" href="mailto:info@devstudio.com">barbershop@email.com</a>
+                            <a class="contacts__info mail" href="mailto:info@devstudio.com">barbershop@email.com</a>
                         </address>
                         <div class="contacts-wrapper__holder">
                             <p class="holder__text">время работы</p>

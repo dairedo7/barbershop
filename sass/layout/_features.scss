@@ -1,10 +1,5 @@
-.features {
-  display: flex;
-}
 .section__description {
-  @media screen and (max-width: 1279px) {
-    margin-bottom: 44px;
-  }
+  margin-bottom: 44px;
 }
 
 .section__features-text {
@@ -15,6 +10,15 @@
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
+
+  @media screen and (min-width: $mobile) {
+    width: 446px;
+
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      margin-left: auto;
+      width: 480px;
+    }
+  }
 }
 
 .features-list__item {
@@ -36,6 +40,12 @@
   &:nth-child(2n) {
     margin-top: 45px;
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features-list__item {
+    padding: 20px 40px;
   }
 }
 
