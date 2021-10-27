@@ -102,8 +102,8 @@
     color: var(--orange-color);
   }
   &:active {
-    -webkit-animation: pulsing 0.4s;
-    animation: pulsing 0.4s;
+    -webkit-animation: btnPulsation var(--trans-duration);
+    animation: btnPulsation var(--trans-duration);
   }
 }
 

@@ -16,6 +16,12 @@
   }
   &__container {
     z-index: 3;
+    @media screen and (min-width: $tablet) {
+    max-width: 690px;
+    }
+    @media screen and (min-width: $desktop) {
+      max-width: 1200px;
+    }
   }
 }
 @media screen and (max-width: 767px) {
@@ -77,9 +83,9 @@
   align-items: center;
   flex-direction: column-reverse;
   top: -13px;
-  right: -271px;
+  right: -232px;
   @media screen and (min-width: $desktop-hd) {
     flex-direction: row;
-    right: -775px;
+    right: -743px;
   }
 }

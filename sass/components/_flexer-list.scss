@@ -16,6 +16,7 @@
     letter-spacing: 0.2em;
 
     color: var(--main-color);
+    transition: var(--trans-duration) var(--timing-function);
   }
   &__item:not(:last-child) {
     margin-right: 40px;
@@ -24,4 +25,8 @@
 
 .flexer-list__item:first-child::before {
   @include before($MR: 40px);
+}
+
+.flexer-list__link:hover {
+  color:var(--orange-color);
 }

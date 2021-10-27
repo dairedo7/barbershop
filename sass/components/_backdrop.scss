@@ -19,11 +19,6 @@
   }
 }
 .is-hidden {
-  clip: rect(0, 0, 0, 0);
-  width: 1px;
-  height: 1px;
-  margin-left: -1px;
-
   opacity: 0;
   pointer-events: none;
   visibility: hidden;

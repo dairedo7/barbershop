@@ -1,6 +1,10 @@
 .navbar__link {
   color: var(--white-color);
   transition: color var(--trans-duration) var(--timing-function);
+  font-family: Open Sans;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+
 
   &:hover,
   &:focus {
@@ -9,11 +13,18 @@
 }
 
 .address__link {
+  align-items: baseline;
   margin-bottom: 20px;
   font-family: Open Sans;
 
   font-size: 18px;
   line-height: 1.67;
+  transition: color var(--trans-duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--orange-color);
+  }
 }
 
 .contacts__info {
@@ -33,7 +44,6 @@
   }
   @media screen and (min-width: $tablet) {
     font-size: 12px;
-    line-height: 1.33;
   }
 }
 
@@ -41,6 +51,9 @@
   margin-bottom: 20px;
 }
 
+.link__text {
+  margin-left: 20px;
+}
 .footer__link {
   font-family: Open Sans;
 

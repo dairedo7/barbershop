@@ -88,7 +88,9 @@
   @media screen and (min-width: $desktop) {
     max-width: 585px;
     width: 100%;
+
     padding: 30px 40px;
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
   }
 }
 
@@ -96,7 +98,9 @@
   @media screen and (min-width: $desktop) {
     max-width: 585px;
     width: 100%;
+
     padding: 30px 40px;
+    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
   }
 }
 
@@ -116,6 +120,10 @@
   color: #9da4bd;
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 1.67;
   }
 }
 
