@@ -287,16 +287,15 @@ summary {
 
 .hidden {
   position: absolute;
-  width: 1;
-  height: 1;
-  margin: -1;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
   clip: rect(0 0 0 0);
   overflow: hidden;
   border: 0;
 }
 
 .slider-lines {
-  display: none;
   position: absolute;
   right: 40px;
   top: 50%;
@@ -307,7 +306,44 @@ summary {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: flex-end;
+}
+
+.slider-lines__label {
+  height: 12px;
+}
+
+.slider-lines-icon::after {
+  content: "";
+  display: inline-block;
+  background-color: black;
+  height: 2px;
+}
+
+.slider-icon-long::after {
+  position: relative;
+  width: 7px;
+  left: 18px;
+  background-color: var(--link-grey);
+}
+
+.slider-icon-short-1::after {
+  position: relative;
+  left: 18px;
+  width: 7px;
+  background-color: var(--link-grey);
+}
+
+.slider-icon-short-2::after {
+  position: relative;
+  left: 18px;
+  width: 7px;
+  background-color: var(--link-grey);
+}
+
+.active-line::after {
+  width: 17px;
+  left: 8px;
+  color: var(--white-color);
 }
 
 .navbar__link {
@@ -1054,6 +1090,16 @@ button {
   }
 }
 
+@media screen and (max-width: 1279px) {
+  .section__description {
+    margin-bottom: 44px;
+  }
+}
+
+.section__features-text {
+  margin-bottom: 40px;
+}
+
 .title--small-margin {
   margin-bottom: 20px;
 }
@@ -1073,6 +1119,10 @@ button {
   }
 }
 
+.section__text-title--no-margin {
+  margin-bottom: 0;
+}
+
 .about__text-content {
   margin-bottom: 40px;
   font-family: Open Sans;
@@ -1080,6 +1130,12 @@ button {
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: var(--text-title-color);
+}
+
+@media screen and (min-width: 1280px) {
+  .about__text-content {
+    width: 480px;
+  }
 }
 
 .flexer-list {
@@ -1295,7 +1351,7 @@ button {
   .hero-section {
     height: 680px;
     min-width: 609px;
-    padding: 40px;
+    padding-top: 40px;
   }
 }
 
@@ -1303,7 +1359,7 @@ button {
   .hero-section {
     min-width: 1125px;
     height: 680px;
-    padding: 40px 50px;
+    padding: 40px 80px;
   }
 }
 
@@ -1505,14 +1561,6 @@ button {
   .about__content {
     width: 500px;
   }
-}
-
-.section__description {
-  margin-bottom: 44px;
-}
-
-.section__features-text {
-  margin-bottom: 40px;
 }
 
 .features-list {
@@ -1925,7 +1973,7 @@ button {
     position: absolute;
     top: 0;
     left: 0;
-    width: 625px;
+    width: 615px;
     height: 100%;
     background-image: url("images/page-footer/footer-bcg-625.png");
     background-position: 50%;

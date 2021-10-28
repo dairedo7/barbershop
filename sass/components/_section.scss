@@ -77,6 +77,16 @@
   }
 }
 
+.section__description {
+  @media screen and (max-width: $desktop - 1px) {
+    margin-bottom: 44px;
+  }
+}
+
+.section__features-text {
+  margin-bottom: 40px;
+}
+
 .title--small-margin {
   margin-bottom: 20px;
 }
@@ -93,6 +103,10 @@
   }
 
   color: var(--text-title-color);
+
+  &--no-margin {
+    margin-bottom: 0;
+  }
 }
 
 .about__text-content {
@@ -106,4 +120,8 @@
   letter-spacing: 0.02em;
 
   color: var(--text-title-color);
+
+  @media screen and (min-width: $desktop) {
+    width: 480px;
+  }
 }

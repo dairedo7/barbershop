@@ -130,7 +130,7 @@
                 <div class="hero-section__bg-shadow"></div>
                 <div class="hero-section__bg-img">
                     <ul class="hero-img-list" data-id="list">
-                        <li class="slide-1 active-slide" data-item="">
+                        <li class="slide-1 active-slide" data-item>
                             <picture class="bg-img__third">
                                 <source srcset="
                                   images/hero/hero-desktop3.jpg  1125w,
@@ -149,7 +149,7 @@
                                     sizes="(min-width:1280px) 1125px, (min-width:768px) 609px, (max-width:767px) 480px, 480px">
                             </picture>
                         </li>
-                        <li class="slide-2 hidden" data-item="">
+                        <li class="slide-2 hidden" data-item>
                             <picture class="bg-img__second">
                                 <source srcset="
                                   images/hero/hero-desktop2.jpg    1125w,
@@ -169,7 +169,7 @@
                                     sizes="(min-width:1280px) 1125px, (min-width:768px) 609px, (max-width:767px) 480px, 480px">
                             </picture>
                         </li>
-                        <li class="slide-3 hidden" data-item="">
+                        <li class="slide-3 hidden" data-item>
                             <picture class="bg-img__first">
                                 <source srcset="
                                   images/hero/hero-desktop1.jpg    1125w,
@@ -205,18 +205,20 @@
                 <form class="slider-lines">
                     <div class="slider-lines__form" role="group">
                         <label class="slider-lines__label" for="first-slider-btn">
-                            <input type="radio" name="slider-img" value="slider-image1"
+                            <input class="hidden" type="radio" name="slider-img" value="slider-image1"
                                 class="slider-lines__form-item slider-lines__first-slide" id="first-slider-btn">
-                            <span class="slider-lines-icon" data-slider-btn="first"></span></label>
+                            <span class="slider-lines-icon slider-icon-long active-line" data-slider-btn="first">
+                            </span>
+                    </label>
                         <label class="slider-lines__label" for="second-slider-btn">
-                            <input type="radio" name="slider-img" value="slider-image2"
+                            <input class="hidden"  type="radio" name="slider-img" value="slider-image2"
                                 class="slider-lines__form-item slider-lines__second-slide" id="second-slider-btn">
-                            <span class="slider-lines-icon" data-slider-btn="second"></span>
+                            <span class="slider-lines-icon slider-icon-short-1" data-slider-btn="second"></span>
                         </label>
                         <label class=" slider-lines__label" for="third-slider-btn">
-                            <input type="radio" name="slider-img" value="slider-image3"
+                            <input class="hidden"  type="radio" name="slider-img" value="slider-image3"
                                 class="slider-lines__form-item slider-lines__third-slide" id="third-slider-btn">
-                            <span class="slider-lines-icon" data-slider-btn="third"></span>
+                            <span class="slider-lines-icon slider-icon-short-2" data-slider-btn="third"></span>
                         </label>
                     </div>
                 </form>
@@ -264,9 +266,9 @@
                 <p class="about__text-content">
                     Мы команда, которая никогда не останавливается на достигнутом
                     и жаждет перемен. И когда ты попадешь в руки нашего мастера,
-                    то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне".
-                    Поэтому, мы всегда
-                    готовы усовершенствовать каждого, кто к нам приходит!
+                    то уже никогда не сможешь быть прежним. Мы команда, которая
+                    всегда с клиентами "на одной волне". Поэтому, мы всегда готовы
+                    усовершенствовать каждого, кто к нам приходит!
                 </p>
                 <a class="about-btn btn" type="button" href="#contacts">Онлайн-запись</a>
             </div>
@@ -338,7 +340,7 @@
                 <h2 class="section__title section__title--light-theme title--small-margin">Почему приходят <br /> именно
                     к нам?
                 </h2>
-                <p class="section__text-title">
+                <p class="section__text-title section__text-title--no-margin">
                     О нас говорят только хорошее. Но лучше <br /> 1 раз увидеть и прочувствовать, чем 10 раз прочитать.
                 </p>
             </div>
@@ -695,10 +697,10 @@
         <div class="footer__bottom">
             <ul class="footer-list">
                 <li class="footer-list__item">
-                    <a class="footer__link">Instagram</a>
+                    <a class="footer__link" href="https://www.instagram.com/">Instagram</a>
                 </li>
                 <li class="footer-list__item">
-                    <a class="footer__link">Youtube</a>
+                    <a class="footer__link" href="https://www.youtube.com/">Youtube</a>
                 </li>
             </ul>
             <p class="copyright">&copy; Copyright 2021</p>

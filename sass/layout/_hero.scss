@@ -74,12 +74,12 @@
   @media screen and (min-width: $tablet) {
     height: 680px;
     min-width: 609px;
-    padding: 40px;
+    padding-top: 40px;
   }
   @media screen and (min-width: $desktop-hd) {
     min-width: 1125px;
     height: 680px;
-    padding: 40px 50px;
+    padding: 40px 80px;
   }
 }
 

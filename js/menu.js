@@ -13,10 +13,22 @@
     mobileMenuRef.classList.toggle("is-open");
   });
 
+
   handlerEscModalClose();
 })();
 
+// const activeSlide = document.querySelector('active-slide');
+// const sliderLines = document.querySelector('slider-lines-icon');
 
+// if (activeSlide === true) {
+//   sliderLinesIcon.classList.add("active-line");
+//   }
+
+  // const btnForward = document.querySelector(".hero-section__btn__forward");
+  // const btnBack = document.querySelector(".hero-section__btn__back");
+  
+
+  
 
 // Реализация закрытия модалки при клике в бекдроп
 const menuBtnRef = document.querySelector('[data-menu-button]');
