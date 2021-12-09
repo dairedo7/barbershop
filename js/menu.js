@@ -17,21 +17,8 @@
   handlerEscModalClose();
 })();
 
-// const activeSlide = document.querySelector('active-slide');
-// const sliderLines = document.querySelector('slider-lines-icon');
-
-// if (activeSlide === true) {
-//   sliderLinesIcon.classList.add("active-line");
-//   }
-
-  // const btnForward = document.querySelector(".hero-section__btn__forward");
-  // const btnBack = document.querySelector(".hero-section__btn__back");
-  
-
-  
-
 // Реализация закрытия модалки при клике в бекдроп
-const menuBtnRef = document.querySelector('[data-menu-button]');
+const menuBtnClose = document.querySelector('[close-menu]');
 const backdrop = document.querySelector('.backdrop');
 const body = document.querySelector('body');
 backdrop.addEventListener('click', onBackdropClick);
@@ -53,13 +40,8 @@ function handlerEscModalClose() {
 // Функция закрытия модального окна и снятия всех классов
 function onModalClose() {
   backdrop.classList.add('is-hidden');
-  menuBtnRef.classList.remove('is-open');
-
   body.classList.remove('modal-open');
-
-  // menuBtnRef.addEventListener("click", () => {
-  //   mobileMenuRef.classList.toggle("is-open");
-  // });
+  menuBtnClose.classList.remove('is-open');
 }
 
 // закрытие модального окна при клике по элементам навигации

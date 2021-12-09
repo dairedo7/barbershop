@@ -22,7 +22,7 @@
                 </svg>
             </a>
             <div class="btn-hidden">
-                <button class="header__burger-btn is-open" width="40px" height="40px" type="button" data-menu-button
+                <button class="header__burger-btn" width="40px" height="40px" type="button" data-menu-button
                     data-modal-open aria-expanded="false" aria-controls="menu-container">
                     <svg class="header__burger-icon">
                         <use href="./images/sprite.svg#burger"></use>
@@ -64,7 +64,7 @@
 
     <!-- mobile-menu -->
     <div class="backdrop is-hidden" data-modal>
-        <div class="mobile-menu" data-menu>
+        <div class="mobile-menu" data-menu close-menu>
             <div class="mobile-menu__container">
                 <button class="mobile-menu__close-btn" type="button" data-menu-close data-modal-close>
                     <svg class="mobile-menu__close-icon">
@@ -209,14 +209,14 @@
                                 class="slider-lines__form-item slider-lines__first-slide" id="first-slider-btn">
                             <span class="slider-lines-icon slider-icon-long active-line" data-slider-btn="first">
                             </span>
-                    </label>
+                        </label>
                         <label class="slider-lines__label" for="second-slider-btn">
-                            <input class="hidden"  type="radio" name="slider-img" value="slider-image2"
+                            <input class="hidden" type="radio" name="slider-img" value="slider-image2"
                                 class="slider-lines__form-item slider-lines__second-slide" id="second-slider-btn">
                             <span class="slider-lines-icon slider-icon-short-1" data-slider-btn="second"></span>
                         </label>
                         <label class=" slider-lines__label" for="third-slider-btn">
-                            <input class="hidden"  type="radio" name="slider-img" value="slider-image3"
+                            <input class="hidden" type="radio" name="slider-img" value="slider-image3"
                                 class="slider-lines__form-item slider-lines__third-slide" id="third-slider-btn">
                             <span class="slider-lines-icon slider-icon-short-2" data-slider-btn="third"></span>
                         </label>
