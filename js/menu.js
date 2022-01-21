@@ -7,14 +7,14 @@
 
   menuBtnRef.addEventListener("click", () => {
     mobileMenuRef.classList.toggle("is-open");
+    window.addEventListener('keydown', handlerEscModalClose);
   });
 
   mobileBtnClose.addEventListener("click", () => {
     mobileMenuRef.classList.toggle("is-open");
+    window.removeEventListener('keydown', handlerEscModalClose);
   });
 
-
-  handlerEscModalClose();
 })();
 
 // Реализация закрытия модалки при клике в бекдроп
@@ -29,12 +29,9 @@ function onBackdropClick(evt) {
 }
 
 // Функция закрытия модального окна при нажатии на Esc
-function handlerEscModalClose() {
-  window.addEventListener('keydown', onEsckeyClick);
-  function onEsckeyClick(evt) {
-    if (evt.code === 'Escape') {
-      onModalClose();
-    }
+function handlerEscModalClose(evt) {
+  if (evt.code === 'Escape') {
+    onModalClose();
   }
 }
 // Функция закрытия модального окна и снятия всех классов
@@ -42,6 +39,8 @@ function onModalClose() {
   backdrop.classList.add('is-hidden');
   body.classList.remove('modal-open');
   menuBtnClose.classList.remove('is-open');
+
+  window.removeEventListener('keydown', handlerEscModalClose);
 }
 
 // закрытие модального окна при клике по элементам навигации
